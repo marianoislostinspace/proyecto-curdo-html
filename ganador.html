@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible universe</title>
+    <link rel="shortcut icon" href="planet.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <header>
+        <h1><u style="background-color: orangered;">nuestro lugar en el espacio</u></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html ">HOME</a></li>
+                <li><a href="comparaciones.html">comparaciones</a></li>
+                <li><a href="audiovisuales.html">audiovisuales</a></li>
+                <li><a class="active" href="ganador.html">vota!!</a></li>
+        </nav>
+        </ul>
+    </header>
+
+
+    <div class="contenedor-formulario">
+        <form>
+            <label for="nombre">nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="escribi tu nombre" required minlength="3">
+            <label for="apellido">apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="escribi tu apellido" required minlength="3">
+            <label for="color de piel">color de piel</label>
+            <select name="tono de piel" id="tono de piel">
+                <option value="blanco">blanco</option>
+                <option value="bronceado caribeño">bronceado caribeño</option>
+                <option value="tostado 3/4">tostado 3/4</option>
+                <option value="re quemado">re quemado</option>
+            </select>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="mail" placeholder="escribi tu mail" required>
+            <label for="pais">pais:</label>
+            <select name="pais" id="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Chile">Chile</option>
+                <option value="Peru">Peru</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="paraguay">paraguay</option>
+                <option value="Brasil">Brasil</option>
+                <option value="bolivia">bolivia</option>
+            </select>
+            <label for="comentarios">comentarios:</label>
+            <textarea name="comentarios" id="comentarios" placeholder="escribi aqui tu comentario"></textarea>
+            <label for="motivo">motivo de contacto:</label>
+            <input type="radio" id="motivo" name="motivo"> <i>gana sherk</i>
+            <input type="radio" id="motivo" name="motivo"> <i>gana shaggy</i>
+            <input type="radio" id="motivo" name="motivo"> <i>gana big chungus</i>
+            <input type="submit" value="enviar">
+
+        </form>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <p>derechos reservados &copy; 2023</p>
+    </footer>
+
+</body>
+
+</html>
